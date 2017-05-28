@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/page/head.ejs %>
+  </head>
+  <body class="<%= classname %>">
+
+    <% include partials/page/header.ejs %>
+
+    <div class="container">
+        <h1><%= pagetitle %> : <%= title %></h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat dui libero, non interdum turpis tempus nec. Aenean velit dui, laoreet nec augue viverra, condimentum posuere dui. Aliquam feugiat interdum nunc eleifend elementum. Sed bibendum semper vehicula. Sed porttitor tellus eros, nec imperdiet enim posuere a. Duis vel lorem sed urna accumsan pulvinar. Proin at arcu lacinia magna sollicitudin condimentum. Donec laoreet ipsum eu velit ullamcorper pretium. Vestibulum tempus tempus purus vitae elementum. Fusce mi turpis, rutrum ornare risus nec, lobortis cursus massa. Sed tempor luctus arcu, quis ultrices felis consectetur eu. Fusce sit amet faucibus ligula, sed vehicula enim. Aliquam convallis odio nisi, et malesuada sem porta ac.
+        </p>
+
+        <% if(typeof(users) !== 'undefined') { %>
+          <ul>
+            <% for(var i=0; i<users.length; i++) { %>
+              <li><%= users[i] %></li>
+            <% } %>
+          </ul>
+        <% } %>
+
+    </div>
+
+    <% include partials/page/footer.ejs %>
+    <% include partials/page/jsdefaults.ejs %>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "app1",
+  "version": "1.0.0",
+  "description": "açık",
+  "main": "app.js",
+  "dependencies": {
+    "browser": "^0.2.6",
+    "http": "^0.0.0",
+    "jQuery": "^1.7.4",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

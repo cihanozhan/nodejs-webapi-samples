@@ -1,0 +1,8 @@
+
+
+package.json dosyasını oluştur
+    npm init
+express.js kur
+    npm install express --save
+embedded.js kur
+    npm install ejs
